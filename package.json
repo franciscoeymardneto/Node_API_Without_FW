@@ -1,0 +1,26 @@
+{
+  "name": "node_api_without_fw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscoeymardneto/Node_API_Without_FW.git"
+  },
+  "keywords": [
+    "node",
+    "nofw",
+    "api",
+    "js",
+    "vanilla"
+  ],
+  "author": "Eymard Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscoeymardneto/Node_API_Without_FW/issues"
+  },
+  "homepage": "https://github.com/franciscoeymardneto/Node_API_Without_FW#readme"
+}
