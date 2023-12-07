@@ -3,7 +3,9 @@ version: '3.7'
 services:
   api:
     image: node:lts
+    working_dir: /home/node/app
     ports:
       - "8080:3000"
     volumes:
-      - "./:/home/node/app"
+      - ./:/home/node/app
+    command: [ 'npm', 'start' ]
