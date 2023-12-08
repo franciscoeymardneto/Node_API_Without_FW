@@ -8,3 +8,5 @@ const server = http.createServer(handler);
 server.listen(port, () => {
   console.log(`Server running on port: ${port}`);
 });
+
+export { server };
