@@ -19,7 +19,7 @@ test("Car Integration Test Suite", async (t) => {
 
     const response = await fetch(serverURL, {
       method: "POST",
-      body: JSON.parse(data),
+      body: JSON.stringify(data),
     });
 
     assert.deepStrictEqual(
