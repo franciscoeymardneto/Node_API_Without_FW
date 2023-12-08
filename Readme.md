@@ -1,20 +1,32 @@
-# Building a complete Node.js WebApi + testing with no frameworks
+# Node.js WebApi + testing with no frameworks (Based on Erick Wendel Tutorial)
 
-Welcome, this repo is part of my youtube video about Creating and testing a complete Node.js Rest API (With no frameworks).
+First of all, leave your star 🌟 on this repo to ap.
 
-First of all, leave your star 🌟 on this repo.
+## Project structure
 
-Access our [**exclusive telegram channel**](https://bit.ly/ErickWendelContentHub) so I'll let you know about all the content I've been producing
+```
+| - src/ (All source files)
+    | - database (File date store all app data)
+    | - entities/ (Obj mapping)
+    | - factories/ (Instance Generators)
+    | - repositories/ (Data access)
+    | - routes/ (Endpoints methods)
+    | - services/ (Bussiness logic)
+    | - util/ (Shared code)
+    | - handler/ (Communication btw services and routes)
+    | - index.js (Server instance)
+```
 
-## Source code of the examples showed in class
+### Tests
 
-- Access them in [examples-in-class/web-api](./examples-in-class/web-api)
+- Integration test
+- Unit tests
 
 ## Features Checklist + Challenges
 
 - Web API
 
-  - [ ] it should have an endpoint for storing heroes' data
+  - [ ] it should have an endpoint for storing cars' data
   - [ ] it should have an endpoint for retrieving heroes' data
   - [ ] it should have an endpoint for updating heroes' data
   - [ ] it should have an endpoint for deleting heroes' data
@@ -44,3 +56,7 @@ Access our [**exclusive telegram channel**](https://bit.ly/ErickWendelContentHub
 - As soon as you've been finishing the tasks, comment on the [**Youtube video**](https://youtu.be/xR4D2bp8_S0) so all other students can be pushed forward by your efforts
 
 ## Have fun!
+
+```
+
+```
