@@ -2,10 +2,11 @@
   "name": "node_api_without_fw",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
     "test": "test",
-    "start": "node /src/index.js"
+    "start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",

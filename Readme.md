@@ -13,7 +13,7 @@ First of all, leave your star 🌟 on this repo to ap.
     | - routes/ (Endpoints methods)
     | - services/ (Bussiness logic)
     | - util/ (Shared code)
-    | - handler/ (Communication btw services and routes)
+    | - handler.js (Communication btw services and routes)
     | - index.js (Server instance)
 ```
 
