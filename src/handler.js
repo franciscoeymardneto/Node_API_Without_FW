@@ -1,15 +1,15 @@
 import { parse } from "node:url";
 import { DEFAULT_HEADER } from "./util/utils.js";
+import { routes } from "./routes/carsRoutes.js";
 
+const carsRoutes = routes({
+  CarsService: {},
+});
 const rootRoutes = {
-  "/cars:get": async (req, res) => {
-    res.write("Car");
-    res.end();
-  },
+  ...carsRoutes,
   default: async (req, res) => {
-    throw new Error("Die from cringe");
-    // res.writeHead(404, DEFAULT_HEADER);
-    // res.end("Not Found!");
+    res.writeHead(404, DEFAULT_HEADER);
+    res.end("Not Found!");
   },
 };
 
