@@ -8,7 +8,7 @@ export default class CarsRepository {
     return JSON.parse(await readFile(this.file));
   }
 
-  async read() {
+  async find() {
     return await this.#readFileContent();
   }
 

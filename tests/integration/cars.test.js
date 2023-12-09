@@ -43,5 +43,19 @@ test("Car Integration Test Suite", async (t) => {
     assert.ok(result.data.id.length > 30, "it should return a valid uuid");
   });
 
+  await t.test("It should list all cars", async (t) => {
+    const response = await fetch(serverURL);
+
+    assert.deepStrictEqual(
+      response.headers.get("content-type"),
+      "application/json"
+    );
+    assert.strictEqual(response.status, 200);
+
+    const result = await response.json();
+
+    assert.ok(Array.isArray(result.value), "It should return an array of cars");
+  });
+
   await promisify(server.close.bind(server))();
 });

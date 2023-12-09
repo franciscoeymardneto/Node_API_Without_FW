@@ -8,7 +8,13 @@ export function routes() {
 
   return {
     "/cars:get": async (req, res) => {
+      const response = await carsService.find();
       res.writeHead(200, DEFAULT_HEADER);
+      res.write(
+        JSON.stringify({
+          value: response,
+        })
+      );
       res.end();
     },
     "/cars:post": async (req, res) => {
