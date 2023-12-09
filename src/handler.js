@@ -2,14 +2,16 @@ import { parse } from "node:url";
 import { DEFAULT_HEADER } from "./util/utils.js";
 import { routes } from "./routes/carsRoutes.js";
 
-const carsRoutes = routes({
-  CarsService: {},
-});
+const carsRoutes = routes();
 const rootRoutes = {
   ...carsRoutes,
   default: async (req, res) => {
     res.writeHead(404, DEFAULT_HEADER);
-    res.end("Not Found!");
+    res.end(
+      JSON.stringify({
+        message: "Resource not found!",
+      })
+    );
   },
 };
 

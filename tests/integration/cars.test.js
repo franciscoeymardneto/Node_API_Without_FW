@@ -1,14 +1,12 @@
 import test from "node:test";
 import assert from "node:assert";
 import { promisify } from "node:util";
+import { initTestServer } from "../utils/testServerHandler.js";
 
 test("Car Integration Test Suite", async (t) => {
-  const testPort = 9000;
-  process.env.PORT = testPort;
+  const { server, url } = await initTestServer();
 
-  const { server } = await import("../../src/index.js");
-
-  const serverURL = `http://localhost:${testPort}/cars`;
+  const serverURL = `${url}/cars`;
 
   await t.test("It should create a car", async (t) => {
     const data = {

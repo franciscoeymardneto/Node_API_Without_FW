@@ -1,7 +1,15 @@
-import CarsRepository from "../repositories/carsRepository.js";
-import CarsService from "../services/carsService";
+import { join, dirname } from "node:path";
 
-export function composeInstance({ fileName }) {
-  const carsRepository = new CarsRepository({ file: fileName });
+import { fileURLToPath, parse, pathToFileURL } from "node:url";
+
+import CarsRepository from "../repositories/carsRepository.js";
+import CarsService from "../services/carsService.js";
+
+export function composeCarsService() {
+  const currentDir = dirname(fileURLToPath(import.meta.url));
+
+  const filePath = join(currentDir, "/../../database", "data.json");
+
+  const carsRepository = new CarsRepository({ file: filePath });
   return new CarsService({ carsRepository });
 }
