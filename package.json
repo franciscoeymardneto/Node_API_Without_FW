@@ -7,7 +7,7 @@
   "scripts": {
     "test": "node --test ./tests/unit",
     "test:e2e": "node --test ./tests/integration",
-    "test:cov": "node --test --experimental-test-coverage ./tests/",
+    "test:cov": "node --test --experimental-test-coverage ./tests/unit",
     "start": "node ./src/index.js"
   },
   "repository": {

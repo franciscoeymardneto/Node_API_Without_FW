@@ -27,9 +27,9 @@ First of all, leave your star 🌟 on this repo to ap.
 - Web API
 
   - [ ] it should have an endpoint for storing cars' data
-  - [ ] it should have an endpoint for retrieving heroes' data
-  - [ ] it should have an endpoint for updating heroes' data
-  - [ ] it should have an endpoint for deleting heroes' data
+  - [ ] it should have an endpoint for retrieving cars' data
+  - [ ] it should have an endpoint for updating cars' data
+  - [ ] it should have an endpoint for deleting cars' data
   - [ ] it should test when the application throws an error
 
 - Testing
@@ -40,20 +40,14 @@ First of all, leave your star 🌟 on this repo to ap.
     - [ ] it should test all files on the repositories layer
     - [ ] it should test all files on the factories layer
     - Plus
-      - [ ] it should reach 100% code coverage (it's currently not possible to get code coverage metrics using only the native Node.js, see [c8](https://www.npmjs.com/package/c8) for this task)
+      - [ ] it should reach 100% code coverage
 
   - Integration / E2E
-    - [ ] it should test the endpoint for storing heroes' data
-    - [ ] it should test the endpoint for retrieving heroes' data
-    - [ ] it should test the endpoint for updating heroes' data
-    - [ ] it should test the endpoint for deleting heroes' data
+    - [ ] it should test the endpoint for storing cars' data
+    - [ ] it should test the endpoint for retrieving cars' data
+    - [ ] it should test the endpoint for updating cars' data
+    - [ ] it should test the endpoint for deleting cars' data
     - [ ] it should test when the application throws an error
-
-### Notes
-
-- Should you have some difficulties solving the problems, please comment on the [**Youtube video**](https://youtu.be/xR4D2bp8_S0)
-
-- As soon as you've been finishing the tasks, comment on the [**Youtube video**](https://youtu.be/xR4D2bp8_S0) so all other students can be pushed forward by your efforts
 
 ## Have fun!
 
