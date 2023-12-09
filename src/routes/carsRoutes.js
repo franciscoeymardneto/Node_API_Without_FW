@@ -1,11 +1,8 @@
 import { once } from "node:events";
 import { DEFAULT_HEADER } from "../util/utils.js";
 import Car from "../entities/car.js";
-import { composeCarsService } from "../factories/carsFactory.js";
 
-export function routes() {
-  const carsService = composeCarsService();
-
+export function routes({ carsService }) {
   return {
     "/cars:get": async (req, res) => {
       const response = await carsService.find();

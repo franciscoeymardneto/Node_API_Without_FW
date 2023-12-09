@@ -1,8 +1,11 @@
 import { parse } from "node:url";
 import { DEFAULT_HEADER } from "./util/utils.js";
 import { routes } from "./routes/carsRoutes.js";
+import { composeCarsService } from "./factories/carsFactory.js";
 
-const carsRoutes = routes();
+const carsRoutes = routes({
+  carsService: composeCarsService(),
+});
 const rootRoutes = {
   ...carsRoutes,
   default: async (req, res) => {

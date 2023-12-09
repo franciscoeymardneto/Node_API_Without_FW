@@ -5,7 +5,9 @@
   "main": "./src/index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test ./tests",
+    "test": "node --test ./tests/unit",
+    "test:e2e": "node --test ./tests/integration",
+    "test:cov": "node --test --experimental-test-coverage ./tests/",
     "start": "node ./src/index.js"
   },
   "repository": {
