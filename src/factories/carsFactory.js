@@ -1,6 +1,6 @@
 import { join, dirname } from "node:path";
 
-import { fileURLToPath, parse, pathToFileURL } from "node:url";
+import { fileURLToPath } from "node:url";
 
 import CarsRepository from "../repositories/carsRepository.js";
 import CarsService from "../services/carsService.js";

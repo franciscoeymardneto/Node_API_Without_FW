@@ -39,7 +39,7 @@ First of all, leave your star 🌟 on this repo to ap.
     - [x] it should test all files on the routes layer
     - [x] it should test all files on the service layer
     - [x] it should test all files on the repositories layer
-    - [ ] it should test all files on the factories layer
+    - [x] it should test all files on the factories layer
     - [ ] it should test when the application throws an error
     - Plus
       - [ ] it should reach 100% code coverage
@@ -53,7 +53,3 @@ First of all, leave your star 🌟 on this repo to ap.
     - [ ] it should test when the application throws an error
 
 ## Have fun!
-
-```
-
-```
