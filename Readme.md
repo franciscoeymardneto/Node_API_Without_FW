@@ -26,25 +26,28 @@ First of all, leave your star 🌟 on this repo to ap.
 
 - Web API
 
-  - [ ] it should have an endpoint for storing cars' data
-  - [ ] it should have an endpoint for retrieving cars' data
+  - [x] it should have an endpoint for storing cars' data
+  - [x] it should have an endpoint for retrieving cars' data
   - [ ] it should have an endpoint for updating cars' data
   - [ ] it should have an endpoint for deleting cars' data
-  - [ ] it should test when the application throws an error
+  -
 
 - Testing
 
   - Unit
 
-    - [ ] it should test all files on the routes layer
+    - [x] it should test all files on the routes layer
+    - [x] it should test all files on the service layer
     - [ ] it should test all files on the repositories layer
     - [ ] it should test all files on the factories layer
+    - [ ] it should test when the application throws an error
     - Plus
       - [ ] it should reach 100% code coverage
 
   - Integration / E2E
-    - [ ] it should test the endpoint for storing cars' data
-    - [ ] it should test the endpoint for retrieving cars' data
+
+    - [x] it should test the endpoint for storing cars' data
+    - [x] it should test the endpoint for retrieving cars' data
     - [ ] it should test the endpoint for updating cars' data
     - [ ] it should test the endpoint for deleting cars' data
     - [ ] it should test when the application throws an error
