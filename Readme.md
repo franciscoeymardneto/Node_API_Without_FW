@@ -38,7 +38,7 @@ First of all, leave your star 🌟 on this repo to ap.
 
     - [x] it should test all files on the routes layer
     - [x] it should test all files on the service layer
-    - [ ] it should test all files on the repositories layer
+    - [x] it should test all files on the repositories layer
     - [ ] it should test all files on the factories layer
     - [ ] it should test when the application throws an error
     - Plus
